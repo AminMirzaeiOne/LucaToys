@@ -73,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Ui\Forms\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
@@ -93,6 +94,9 @@
   <ItemGroup>
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
