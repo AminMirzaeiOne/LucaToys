@@ -21,5 +21,7 @@ namespace Accounting.Ui.Components
 
             InitializeComponent();
         }
+
+        public System.Windows.Forms.Form Window { get; set; } = null;
     }
 }
