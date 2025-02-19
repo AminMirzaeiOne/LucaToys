@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Abstractions\IPerson.cs" />
     <Compile Include="Models\Person\Customer.cs" />
+    <Compile Include="Models\Person\Guest.cs" />
     <Compile Include="Models\Person\Manager.cs" />
     <Compile Include="Models\Person\Seller.cs" />
     <Compile Include="Program.cs" />
