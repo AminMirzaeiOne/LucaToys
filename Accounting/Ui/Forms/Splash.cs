@@ -15,7 +15,6 @@ namespace Accounting.Ui.Forms
         public Splash()
         {
             InitializeComponent();
-            this.windowAnimation1.Window = this;
         }
     }
 }

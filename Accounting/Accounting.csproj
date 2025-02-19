@@ -99,5 +99,8 @@
   <ItemGroup>
     <None Include="Resources\SplashImage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashSound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
