@@ -31,8 +31,16 @@ namespace Accounting.Ui.Components
         }
 
         private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-
-        public System.Windows.Forms.Form Window { get; set; } 
+        private System.Windows.Forms.Form window = new System.Windows.Forms.Form();
+        public System.Windows.Forms.Form Window
+        {
+            get { return this.window; }
+            set 
+            {
+                this.window = value;
+                this.CheckNull();
+            }
+        }
 
         private void Start(object sender, EventArgs e)
         {
