@@ -59,6 +59,12 @@
     <Compile Include="Ui\Components\WindowAnimation.Designer.cs">
       <DependentUpon>WindowAnimation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ui\Components\WindowSound.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ui\Components\WindowSound.Designer.cs">
+      <DependentUpon>WindowSound.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ui\Forms\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
