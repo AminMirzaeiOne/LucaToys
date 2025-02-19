@@ -71,7 +71,7 @@ namespace Accounting.Ui.Components
             {
                 this.Window.Load += new EventHandler(Start);
             }
-            timer.Interval = 40;
+            timer.Interval = 60;
             timer.Tick += new EventHandler(this.Timer_Tick);
         }
     }
