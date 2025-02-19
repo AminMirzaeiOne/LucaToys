@@ -85,6 +85,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Ui\Components\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
   </ItemGroup>
