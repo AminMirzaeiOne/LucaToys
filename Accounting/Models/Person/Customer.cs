@@ -17,5 +17,6 @@ namespace Accounting.Models.Person
         public string Email { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Address { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string NationalCode { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool Gender { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

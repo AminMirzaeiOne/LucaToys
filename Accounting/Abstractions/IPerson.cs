@@ -10,6 +10,7 @@ namespace Accounting.Abstractions
     internal interface IPerson
     {
         int Id { get; set; }
+        bool Gender { get; set; }
         string FirstName { get; set; }
         string LastName { get; set; }
         string Phone { get; set; }
