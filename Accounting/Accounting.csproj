@@ -72,6 +72,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Abstractions\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Forms\" />
     <Folder Include="Ui\Messages\" />
