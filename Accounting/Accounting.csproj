@@ -49,6 +49,7 @@
     <Compile Include="Abstractions\IPerson.cs" />
     <Compile Include="Models\Person\Customer.cs" />
     <Compile Include="Models\Person\Manager.cs" />
+    <Compile Include="Models\Person\Seller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
