@@ -65,6 +65,7 @@
     <Compile Include="Ui\Components\WindowSound.Designer.cs">
       <DependentUpon>WindowSound.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ui\Controls\RoundLabel.cs" />
     <Compile Include="Ui\Forms\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
-    <Folder Include="Ui\Controls\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
   </ItemGroup>
