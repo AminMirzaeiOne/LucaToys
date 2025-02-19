@@ -63,6 +63,16 @@ namespace Accounting.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LucaLogoSplash {
+            get {
+                object obj = ResourceManager.GetObject("LucaLogoSplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SplashImage {
             get {
                 object obj = ResourceManager.GetObject("SplashImage", resourceCulture);

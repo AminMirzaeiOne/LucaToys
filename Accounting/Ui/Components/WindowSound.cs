@@ -42,7 +42,7 @@ namespace Accounting.Ui.Components
             }
         }
 
-        public bool Enable { get; set; }
+        public bool Enable { get; set; } = true;
 
         private void Start(object sender, EventArgs e)
         {

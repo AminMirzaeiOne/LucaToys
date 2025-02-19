@@ -108,5 +108,8 @@
   <ItemGroup>
     <None Include="Resources\SplashSound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LucaLogoSplash.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
