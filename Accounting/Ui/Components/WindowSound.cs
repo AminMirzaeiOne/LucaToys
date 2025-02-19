@@ -42,13 +42,19 @@ namespace Accounting.Ui.Components
             }
         }
 
+        public bool Enable { get; set; }
+
         private void Start(object sender, EventArgs e)
         {
-            using (SoundPlayer sound = new SoundPlayer()) 
+            if (this.Enable)
             {
-                sound.Stream = Properties.Resources.SplashSound;
-                sound.Play();
+                using (SoundPlayer sound = new SoundPlayer())
+                {
+                    sound.Stream = Properties.Resources.SplashSound;
+                    sound.Play();
+                }
             }
+           
         }
 
         private void CheckNull()
