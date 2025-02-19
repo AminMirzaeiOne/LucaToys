@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Ui\Controls\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
   </ItemGroup>
