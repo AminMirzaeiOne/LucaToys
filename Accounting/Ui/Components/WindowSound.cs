@@ -13,13 +13,44 @@ namespace Accounting.Ui.Components
         public WindowSound()
         {
             InitializeComponent();
+            this.CheckNull();
+        }
+
+        public WindowSound(System.Windows.Forms.Form window)
+        {
+            this.Window = window;
+            this.CheckNull();
         }
 
         public WindowSound(IContainer container)
         {
             container.Add(this);
-
             InitializeComponent();
+            this.CheckNull();
+        }
+
+        private System.Windows.Forms.Form window = new System.Windows.Forms.Form();
+
+        public System.Windows.Forms.Form Window
+        {
+            get { return this.window; }
+            set
+            {
+                this.window = value;
+            }
+        }
+
+        private void Start(object sender, EventArgs e)
+        {
+            this.Window.Opacity = 0;
+        }
+
+        private void CheckNull()
+        {
+            if (this.Window != null)
+            {
+                this.Window.Load += new EventHandler(Start);
+            }
         }
     }
 }
