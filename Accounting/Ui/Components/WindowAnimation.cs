@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Accounting.Ui.Components
 {
@@ -13,29 +14,25 @@ namespace Accounting.Ui.Components
         public WindowAnimation()
         {
             InitializeComponent();
+            this.CheckNull();
         }
 
         public WindowAnimation(System.Windows.Forms.Form window)
         {
             this.Window = window;
-            if (this.Window != null)
-            {
-                this.Window.Load += new EventHandler(Start);
-            }
-            timer.Interval = 40;
-            timer.Tick += new EventHandler(this.Timer_Tick);
+            this.CheckNull();
         }
 
         public WindowAnimation(IContainer container)
         {
             container.Add(this);
-
             InitializeComponent();
+            this.CheckNull();
         }
 
         private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
-        public System.Windows.Forms.Form Window { get; set; } = null;
+        public System.Windows.Forms.Form Window { get; set; } 
 
         private void Start(object sender, EventArgs e)
         {
@@ -58,6 +55,16 @@ namespace Accounting.Ui.Components
             {
                 this.Stop();
             }
+        }
+
+       private void CheckNull()
+        {
+            if (this.Window != null)
+            {
+                this.Window.Load += new EventHandler(Start);
+            }
+            timer.Interval = 40;
+            timer.Tick += new EventHandler(this.Timer_Tick);
         }
     }
 }

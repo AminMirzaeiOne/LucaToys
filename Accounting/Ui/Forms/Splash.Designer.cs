@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.windowAnimation1 = new Accounting.Ui.Components.WindowAnimation(this.components);
             this.SuspendLayout();
+            // 
+            // windowAnimation1
+            // 
+            this.windowAnimation1.Window = this;
             // 
             // Splash
             // 
@@ -45,5 +51,7 @@
         }
 
         #endregion
+
+        private Components.WindowAnimation windowAnimation1;
     }
 }
