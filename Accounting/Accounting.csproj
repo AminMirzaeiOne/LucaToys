@@ -72,7 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Ui\" />
+    <Folder Include="Ui\Dialogs\" />
+    <Folder Include="Ui\Forms\" />
+    <Folder Include="Ui\Messages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
