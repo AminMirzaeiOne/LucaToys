@@ -35,17 +35,23 @@ namespace Accounting.Ui.Components
         public System.Windows.Forms.Form Window
         {
             get { return this.window; }
-            set 
+            set
             {
                 this.window = value;
                 this.CheckNull();
             }
         }
 
+        public bool Enable { get; set; } = true;
+
         private void Start(object sender, EventArgs e)
         {
-            this.Window.Opacity = 0;
-            timer.Start();
+            if (this.Enable)
+            {
+                this.Window.Opacity = 0;
+                timer.Start();
+            }
+                
         }
 
         private void Stop()
@@ -55,7 +61,7 @@ namespace Accounting.Ui.Components
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (this.Window.Opacity<1)
+            if (this.Window.Opacity < 1)
             {
                 this.Window.Opacity += 0.10;
             }
@@ -65,7 +71,7 @@ namespace Accounting.Ui.Components
             }
         }
 
-       private void CheckNull()
+        private void CheckNull()
         {
             if (this.Window != null)
             {
