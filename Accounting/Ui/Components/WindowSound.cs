@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,12 +38,17 @@ namespace Accounting.Ui.Components
             set
             {
                 this.window = value;
+                this.CheckNull();
             }
         }
 
         private void Start(object sender, EventArgs e)
         {
-            this.Window.Opacity = 0;
+            using (SoundPlayer sound = new SoundPlayer()) 
+            {
+                sound.Stream = Properties.Resources.SplashSound;
+                sound.Play();
+            }
         }
 
         private void CheckNull()
