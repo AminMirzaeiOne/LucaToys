@@ -53,6 +53,12 @@
     <Compile Include="Models\Person\Seller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ui\Components\WindowAnimation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ui\Components\WindowAnimation.Designer.cs">
+      <DependentUpon>WindowAnimation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ui\Forms\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,7 +91,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Ui\Components\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
   </ItemGroup>
