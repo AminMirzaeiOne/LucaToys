@@ -66,14 +66,18 @@ namespace Accounting.Ui.Controls
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            e.Cancel = closeCancel;
-            if (this.Animation && this.closeCancel)
+            if(Sunny.UI.UIMessageBox.Show("آیا میخواهید پنجره فعلی را ببندید ؟", "سوال", Sunny.UI.UIStyle.Red, Sunny.UI.UIMessageBoxButtons.OKCancel) == true)
             {
-                this.Opacity = 1;
-                this.timerClose.Start();
-                e.Cancel = this.closeCancel;
-                
+                e.Cancel = closeCancel;
+                if (this.Animation && this.closeCancel)
+                {
+                    this.Opacity = 1;
+                    this.timerClose.Start();
+                    e.Cancel = this.closeCancel;
+
+                }
             }
+            
         }
 
         private void TimerShow_Tick(object sender, EventArgs e)
