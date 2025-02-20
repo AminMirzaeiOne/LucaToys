@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Accounting.Ui.Controls
 {
-    internal class RoundPictureBox
+    internal class RoundPictureBox : System.Windows.Forms.PictureBox
     {
 
     }

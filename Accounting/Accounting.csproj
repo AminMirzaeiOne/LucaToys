@@ -55,6 +55,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ui\Bases\GraphicsExtension.cs" />
+    <Compile Include="Ui\Bases\IRoundControl.cs" />
+    <Compile Include="Ui\Bases\RoundControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ui\Components\WindowAnimation.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -70,7 +74,9 @@
     <Compile Include="Ui\Controls\RoundLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Ui\Controls\RoundPictureBox.cs" />
+    <Compile Include="Ui\Controls\RoundPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ui\Forms\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
