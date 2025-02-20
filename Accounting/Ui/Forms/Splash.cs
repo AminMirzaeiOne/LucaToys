@@ -16,5 +16,18 @@ namespace Accounting.Ui.Forms
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (this.roundLabel4.Right < this.roundLabel3.Right)
+            {
+                this.roundLabel4.Width += 5;
+            }
+            else
+            {
+                this.timer1.Stop();
+                this.Cursor = Cursors.Arrow;
+            }
+        }
     }
 }
