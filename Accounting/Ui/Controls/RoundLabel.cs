@@ -11,7 +11,7 @@ using System.ComponentModel;
 
 namespace Accounting.Ui.Controls
 {
-    internal class RoundLabel : System.Windows.Forms.Label
+    internal class RoundLabel : System.Windows.Forms.Label, IRoundControl
     {
         public System.Byte BorderRadius { get; set; } = 20;
 

@@ -12,9 +12,5 @@ namespace Accounting.Ui.Bases
     internal interface IRoundControl
     {
         System.Byte BorderRadius { get; set; }
-
-        GraphicsPath GetRoundPath(RectangleF Rect, int radius);
-
-        void OnPaint(PaintEventArgs e);
     }
 }

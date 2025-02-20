@@ -15,6 +15,7 @@ namespace Accounting.Ui.Forms
         public Splash()
         {
             InitializeComponent();
+            MaterialSkin.ColorScheme colorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Amber50, MaterialSkin.Primary.Cyan900,MaterialSkin.Primary.Teal700,MaterialSkin.Accent.LightBlue700,MaterialSkin.TextShade.BLACK);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
