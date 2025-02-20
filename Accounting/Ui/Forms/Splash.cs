@@ -28,6 +28,11 @@ namespace Accounting.Ui.Forms
             {
                 this.timer1.Stop();
                 this.Cursor = Cursors.Arrow;
+                System.Threading.Thread.Sleep(200);
+                this.Hide();
+                System.Threading.Thread.Sleep(200);
+                Accounting.Ui.Forms.Login login = new Login();
+                login.Show();
             }
         }
 
