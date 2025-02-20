@@ -31,7 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.uiStyleManager1 = new Sunny.UI.UIStyleManager(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(135, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(192, 72);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
@@ -40,6 +51,7 @@
             this.ClientSize = new System.Drawing.Size(498, 597);
             this.ControlBoxCloseFillHoverColor = System.Drawing.Color.Red;
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.Controls.Add(this.button1);
             this.EscClose = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IconImageSize = 20;
@@ -62,5 +74,6 @@
 
         #endregion
         private Sunny.UI.UIStyleManager uiStyleManager1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -54,6 +54,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WFAlert, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Lenovo\Desktop\WFAlert_CS-SoundsVersion\WFAlert\bin\Debug\WFAlert.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstractions\IPerson.cs" />
@@ -102,6 +106,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Ui\Controls\SunnyMessagePlus.resx">
+      <DependentUpon>SunnyMessagePlus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ui\Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +154,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-google-40.png" />
+    <None Include="Resources\icons8-copy-40.png" />
+    <None Include="Resources\icons8-unavailable-40.png" />
+    <None Include="Resources\icons8-exit-40%281%29.png" />
+    <None Include="Resources\icons8-tick-40.png" />
+    <None Include="Resources\icons8-info-100.png" />
+    <None Include="Resources\icons8-tick-100.png" />
+    <None Include="Resources\icons8-warning-100%281%29.png" />
+    <None Include="Resources\icons8-warning-100.png" />
+    <None Include="Resources\errorGif2.gif" />
+    <None Include="Resources\errorGif.gif" />
+    <None Include="Resources\icons8-error1.gif" />
+    <None Include="Resources\icons8-error.gif" />
     <None Include="Resources\LoginSound.wav" />
     <None Include="Resources\icons8-software-32.png" />
     <None Include="Resources\icons8-date-32.png" />
