@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Accounting.Ui.Forms
 {
-    public partial class Login : Sunny.UI.UIForm
+    public partial class Login : Ui.Controls.SunnyFormPlus
     {
         public Login()
         {
