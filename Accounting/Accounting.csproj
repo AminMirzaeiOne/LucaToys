@@ -141,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-branch-32.png" />
     <None Include="Resources\icons8-about-40.png" />
     <None Include="Resources\icons8-restart-40.png" />
     <None Include="Resources\icons8-exit-40.png" />
