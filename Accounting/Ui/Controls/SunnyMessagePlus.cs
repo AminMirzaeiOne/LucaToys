@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Sunny.UI;
 
 namespace Accounting.Ui.Controls
 {
@@ -17,7 +20,6 @@ namespace Accounting.Ui.Controls
         private Sunny.UI.UIContextMenuStrip uiContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem بلهToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem خیرToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem انصرافToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem کپیمتنپیامToolStripMenuItem;
@@ -36,17 +38,17 @@ namespace Accounting.Ui.Controls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SunnyMessagePlus));
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             this.uiStyleManager1 = new Sunny.UI.UIStyleManager(this.components);
             this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton3 = new Sunny.UI.UISymbolButton();
             this.label1 = new System.Windows.Forms.Label();
             this.uiContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.بلهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.خیرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.انصرافToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.کپیمتنپیامToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.جستجومتنپیامToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,23 +62,12 @@ namespace Accounting.Ui.Controls
             // 
             this.uiSymbolButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiSymbolButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uiSymbolButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton1.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.uiSymbolButton1.Location = new System.Drawing.Point(390, 352);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(389, 351);
             this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton1.Name = "uiSymbolButton1";
             this.uiSymbolButton1.Radius = 10;
-            this.uiSymbolButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uiSymbolButton1.Size = new System.Drawing.Size(178, 50);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
             this.uiSymbolButton1.TabIndex = 0;
             this.uiSymbolButton1.Text = "بله";
             this.uiSymbolButton1.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -88,10 +79,10 @@ namespace Accounting.Ui.Controls
             this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiSymbolButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uiSymbolButton2.FillHoverColor = System.Drawing.Color.DimGray;
-            this.uiSymbolButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uiSymbolButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.uiSymbolButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.uiSymbolButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton2.Location = new System.Drawing.Point(202, 352);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(201, 351);
             this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton2.Name = "uiSymbolButton2";
             this.uiSymbolButton2.Radius = 10;
@@ -113,10 +104,10 @@ namespace Accounting.Ui.Controls
             this.uiSymbolButton3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiSymbolButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uiSymbolButton3.FillHoverColor = System.Drawing.Color.DimGray;
-            this.uiSymbolButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uiSymbolButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.uiSymbolButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.uiSymbolButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton3.Location = new System.Drawing.Point(13, 352);
+            this.uiSymbolButton3.Location = new System.Drawing.Point(12, 351);
             this.uiSymbolButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton3.Name = "uiSymbolButton3";
             this.uiSymbolButton3.Radius = 10;
@@ -151,25 +142,14 @@ namespace Accounting.Ui.Controls
             this.uiContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.بلهToolStripMenuItem,
             this.خیرToolStripMenuItem,
-            this.toolStripSeparator1,
             this.انصرافToolStripMenuItem,
             this.toolStripSeparator2,
             this.کپیمتنپیامToolStripMenuItem,
             this.جستجومتنپیامToolStripMenuItem});
             this.uiContextMenuStrip1.Name = "uiContextMenuStrip1";
             this.uiContextMenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.uiContextMenuStrip1.Size = new System.Drawing.Size(265, 289);
+            this.uiContextMenuStrip1.Size = new System.Drawing.Size(242, 250);
             this.uiContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.uiContextMenuStrip1_Opening);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(238, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(238, 6);
             // 
             // بلهToolStripMenuItem
             // 
@@ -198,12 +178,17 @@ namespace Accounting.Ui.Controls
             this.انصرافToolStripMenuItem.Text = "انصراف";
             this.انصرافToolStripMenuItem.Click += new System.EventHandler(this.uiSymbolButton3_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(238, 6);
+            // 
             // کپیمتنپیامToolStripMenuItem
             // 
             this.کپیمتنپیامToolStripMenuItem.Image = global::Accounting.Properties.Resources.icons8_copy_40;
             this.کپیمتنپیامToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.کپیمتنپیامToolStripMenuItem.Name = "کپیمتنپیامToolStripMenuItem";
-            this.کپیمتنپیامToolStripMenuItem.Size = new System.Drawing.Size(264, 48);
+            this.کپیمتنپیامToolStripMenuItem.Size = new System.Drawing.Size(241, 48);
             this.کپیمتنپیامToolStripMenuItem.Text = "کپی متن پیام";
             this.کپیمتنپیامToolStripMenuItem.Click += new System.EventHandler(this.کپیمتنپیامToolStripMenuItem_Click);
             // 
@@ -212,7 +197,7 @@ namespace Accounting.Ui.Controls
             this.جستجومتنپیامToolStripMenuItem.Image = global::Accounting.Properties.Resources.icons8_google_40;
             this.جستجومتنپیامToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.جستجومتنپیامToolStripMenuItem.Name = "جستجومتنپیامToolStripMenuItem";
-            this.جستجومتنپیامToolStripMenuItem.Size = new System.Drawing.Size(264, 48);
+            this.جستجومتنپیامToolStripMenuItem.Size = new System.Drawing.Size(241, 48);
             this.جستجومتنپیامToolStripMenuItem.Text = "جستجو متن پیام";
             this.جستجومتنپیامToolStripMenuItem.Click += new System.EventHandler(this.جستجومتنپیامToolStripMenuItem_Click);
             // 
@@ -247,11 +232,9 @@ namespace Accounting.Ui.Controls
             // 
             // SunnyMessagePlus
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.AcceptButton = this.uiSymbolButton1;
             this.ClientSize = new System.Drawing.Size(579, 414);
             this.ContextMenuStrip = this.uiContextMenuStrip1;
-            this.ControlBoxCloseFillHoverColor = System.Drawing.Color.Red;
-            this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -259,15 +242,14 @@ namespace Accounting.Ui.Controls
             this.Controls.Add(this.uiSymbolButton2);
             this.Controls.Add(this.uiSymbolButton1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SunnyMessagePlus";
-            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "سوال";
-            this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 480);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SunnyMessagePlus_FormClosed);
             this.Load += new System.EventHandler(this.SunnyMessagePlus_Load);
             this.uiContextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -277,15 +259,27 @@ namespace Accounting.Ui.Controls
 
         public enum Types { Error, Warning, Info, Successful }
         public enum MessageButtons { YesNo, Ok, YesNoCancel }
+        public enum Results { None, Ok, Yes, No, Cancel }
 
         private Types types = Types.Error;
         private MessageButtons buttons = MessageButtons.Ok;
+        private Results result = Results.None;
+
+        public Results Result
+        {
+            get { return result; }
+            private set
+            {
+                this.result = value;
+            }
+        }
 
         public MessageButtons Buttons
         {
             get { return buttons; }
             set
             {
+
                 this.buttons = value;
                 switch (value)
                 {
@@ -323,15 +317,29 @@ namespace Accounting.Ui.Controls
                 {
                     case Types.Error:
                         this.pictureBox1.BackgroundImage = Properties.Resources.icons8_warning_100;
+                        if (this.TitleText == string.Empty)
+                            this.TitleText = "خطا ناموفق";
                         break;
                     case Types.Warning:
                         this.pictureBox1.BackgroundImage = Properties.Resources.icons8_warning_100_1_;
+
+                        if (this.TitleText == string.Empty)
+                            this.TitleText = "اخطار";
+
                         break;
                     case Types.Info:
                         this.pictureBox1.BackgroundImage = Properties.Resources.icons8_info_100;
+
+                        if (this.TitleText == string.Empty)
+                            this.TitleText = "اطلاع";
+
                         break;
                     case Types.Successful:
                         this.pictureBox1.BackgroundImage = Properties.Resources.icons8_tick_100;
+
+                        if (this.TitleText == string.Empty)
+                            this.TitleText = "موفقیت";
+
                         break;
                 }
             }
@@ -355,14 +363,72 @@ namespace Accounting.Ui.Controls
             }
         }
 
-        public string Title
+        public string TitleText
         {
-            get { return this.Title; }
-            set { this.Title = value; }
+            get { return this.Text; }
+            set { this.Text = value; }
+        }
+
+        public UIStyle StyleColor
+        {
+            get { return this.uiStyleManager1.Style; }
+            set
+            {
+                this.uiStyleManager1.Style = value;
+                switch (value)
+                {
+                    case UIStyle.Blue:
+                        this.label1.ForeColor = Color.FromArgb(64, 128, 204);
+                        break;
+                    case UIStyle.Red:
+                        this.label1.ForeColor = Color.FromArgb(230, 80, 80);
+                        break;
+                    case UIStyle.Purple:
+                        this.label1.ForeColor = Color.FromArgb(102, 58, 183);
+                        break;
+                    case UIStyle.LayuiRed:
+                        this.label1.ForeColor = Color.FromArgb(255, 87, 34);
+                        break;
+                    case UIStyle.DarkBlue:
+                        this.label1.ForeColor = Color.FromArgb(64, 128, 204);
+                        break;
+                    case UIStyle.Green:
+                        this.label1.ForeColor = Color.FromArgb(88, 152, 32);
+                        break;
+                    case UIStyle.Gray:
+                        this.label1.ForeColor = Color.FromArgb(112, 112, 112);
+                        break;
+                    case UIStyle.Orange:
+                        this.label1.ForeColor = Color.FromArgb(220, 155, 40);
+                        break;
+                    case UIStyle.LayuiGreen:
+                        this.label1.ForeColor = Color.FromArgb(0, 120, 109);
+                        break;
+                    case UIStyle.LayuiOrange:
+                        this.label1.ForeColor = Color.FromArgb(204, 148, 0);
+                        break;
+                    case UIStyle.Black:
+                        this.label1.ForeColor = Color.DodgerBlue;
+                        break;
+                }
+                this.uiSymbolButton2.RectColor = this.label1.ForeColor;
+                this.uiSymbolButton3.RectColor = this.label1.ForeColor;
+                this.uiSymbolButton2.RectHoverColor = this.label1.ForeColor;
+                this.uiSymbolButton3.RectHoverColor = this.label1.ForeColor;
+                this.uiSymbolButton2.RectPressColor = this.label1.ForeColor;
+                this.uiSymbolButton3.RectPressColor = this.label1.ForeColor;
+            }
         }
 
         private void uiSymbolButton3_Click(object sender, EventArgs e)
         {
+            switch (this.Buttons)
+            {
+                case MessageButtons.YesNo:
+                case MessageButtons.YesNoCancel:
+                    this.Result = Results.Cancel;
+                    break;
+            }
             this.Close();
         }
 
@@ -373,12 +439,30 @@ namespace Accounting.Ui.Controls
 
         private void uiSymbolButton1_Click(object sender, EventArgs e)
         {
+            switch (this.Buttons)
+            {
+                case MessageButtons.Ok:
+                    this.Result = Results.Ok;
+                    break;
 
+                case MessageButtons.YesNo:
+                case MessageButtons.YesNoCancel:
+                    this.Result = Results.Yes;
+                    break;
+            }
+            this.Close();
         }
 
         private void uiSymbolButton2_Click(object sender, EventArgs e)
         {
-
+            switch (this.Buttons)
+            {
+                case MessageButtons.YesNo:
+                case MessageButtons.YesNoCancel:
+                    this.Result = Results.No;
+                    break;
+            }
+            this.Close();
         }
 
         private void کپیمتنپیامToolStripMenuItem_Click(object sender, EventArgs e)
@@ -402,6 +486,28 @@ namespace Accounting.Ui.Controls
             بلهToolStripMenuItem.Visible = this.uiSymbolButton1.Visible;
             خیرToolStripMenuItem.Visible = this.uiSymbolButton2.Visible;
             انصرافToolStripMenuItem.Visible = this.uiSymbolButton3.Visible;
+        }
+
+        private Results sendResult = Results.None;
+
+        public static Results ShowMessage(UIForm parent,string title, string subject, string maintext, Ui.Controls.SunnyMessagePlus.Types type, Ui.Controls.SunnyMessagePlus.MessageButtons buttons, UIStyle style)
+        {
+            SunnyMessagePlus msg = new SunnyMessagePlus();
+            msg.StyleColor = style;
+            msg.TitleText = title;
+            msg.Subject = subject;
+            msg.MainText = maintext;
+            msg.Type = type;
+            msg.Buttons = buttons;
+            msg.Show();
+            return msg.sendResult;
+
+
+        }
+
+        private void SunnyMessagePlus_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+        {
+            this.sendResult = this.Result;
         }
     }
 }

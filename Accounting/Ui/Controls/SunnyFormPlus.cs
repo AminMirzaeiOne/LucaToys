@@ -27,7 +27,7 @@ namespace Accounting.Ui.Controls
         private System.Windows.Forms.Timer timerClose = new System.Windows.Forms.Timer();
         private bool closeCancel = true;
         public System.Boolean Animation { get; set; } = true;
-
+        public System.Boolean EnableMessageBox { get; set; } = true;
 
         public StartupSounds StartupSound
         {

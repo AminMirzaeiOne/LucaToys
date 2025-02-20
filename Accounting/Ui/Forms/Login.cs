@@ -15,13 +15,9 @@ namespace Accounting.Ui.Forms
         public Login()
         {
             InitializeComponent();
-            this.uiStyleManager1.Style = Sunny.UI.UIStyle.Purple;
+            this.uiStyleManager1.Style = Sunny.UI.UIStyle.Black;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Ui.Controls.SunnyMessagePlus sunnyMessagePlus = new Controls.SunnyMessagePlus();
-            sunnyMessagePlus.ShowDialog();
-        }
+
     }
 }
