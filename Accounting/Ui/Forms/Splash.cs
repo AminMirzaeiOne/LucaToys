@@ -15,19 +15,40 @@ namespace Accounting.Ui.Forms
         public Splash()
         {
             InitializeComponent();
+            this.uiContextMenuStrip1.Style = Sunny.UI.UIStyle.Red;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (this.roundLabel4.Right < this.roundLabel3.Right)
+            if (this.uiProcessBar1.Value < 100)
             {
-                this.roundLabel4.Width += 5;
+                this.uiProcessBar1.Value += 1;
             }
             else
             {
                 this.timer1.Stop();
                 this.Cursor = Cursors.Arrow;
             }
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void خروجازبرنامهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void شروعمجددبرنامهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Restart();
+        }
+
+        private void دربارهبرنامهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

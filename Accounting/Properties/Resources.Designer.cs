@@ -63,9 +63,39 @@ namespace Accounting.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_about_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-about-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_programmer_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-programmer-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_restart_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-restart-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
