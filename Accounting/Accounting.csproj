@@ -74,6 +74,9 @@
     <Compile Include="Ui\Controls\RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Ui\Controls\SunnyFormPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ui\Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\LoginSound.wav" />
     <None Include="Resources\icons8-software-32.png" />
     <None Include="Resources\icons8-date-32.png" />
     <None Include="Resources\icons8-branch-32.png" />
