@@ -70,6 +70,7 @@
     <Compile Include="Ui\Controls\RoundLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Ui\Controls\RoundPictureBox.cs" />
     <Compile Include="Ui\Forms\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
