@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Accounting.Ui.Forms
 {
-    public partial class Login : Form
+    public partial class Login : Sunny.UI.UIForm
     {
         public Login()
         {
             InitializeComponent();
+            this.uiStyleManager1.Style = Sunny.UI.UIStyle.Purple;
         }
     }
 }

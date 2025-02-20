@@ -37,8 +37,7 @@
             this.roundLabel4 = new Accounting.Ui.Controls.RoundLabel();
             this.roundLabel3 = new Accounting.Ui.Controls.RoundLabel();
             this.roundLabel1 = new Accounting.Ui.Controls.RoundLabel();
-            this.windowAnimation1 = new Accounting.Ui.Components.WindowAnimation(this.components);
-            this.windowSound1 = new Accounting.Ui.Components.WindowSound(this.components);
+        
             ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,16 +143,6 @@
             this.roundLabel1.Text = "نسخه : 1.0.0";
             this.roundLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // windowAnimation1
-            // 
-            this.windowAnimation1.Enable = true;
-            this.windowAnimation1.Window = this;
-            // 
-            // windowSound1
-            // 
-            this.windowSound1.Enable = false;
-            this.windowSound1.Window = this;
-            // 
             // Splash
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -180,8 +169,7 @@
 
         #endregion
 
-        private Components.WindowAnimation windowAnimation1;
-        private Components.WindowSound windowSound1;
+
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Controls.RoundLabel roundLabel1;
