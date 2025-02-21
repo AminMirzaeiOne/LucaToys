@@ -117,7 +117,7 @@
             // 
             this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiSymbolButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton1.Location = new System.Drawing.Point(469, 501);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(469, 513);
             this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton1.Name = "uiSymbolButton1";
             this.uiSymbolButton1.Radius = 10;
@@ -125,12 +125,13 @@
             this.uiSymbolButton1.TabIndex = 3;
             this.uiSymbolButton1.Text = "ورود";
             this.uiSymbolButton1.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
             // uiSymbolButton2
             // 
             this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiSymbolButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton2.Location = new System.Drawing.Point(19, 501);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(19, 513);
             this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton2.Name = "uiSymbolButton2";
             this.uiSymbolButton2.Radius = 10;
@@ -150,7 +151,7 @@
             this.uiLine1.Name = "uiLine1";
             this.uiLine1.Size = new System.Drawing.Size(529, 29);
             this.uiLine1.TabIndex = 4;
-            this.uiLine1.Text = "اطلاعات";
+            this.uiLine1.Text = "اطلاعات ورود";
             // 
             // label1
             // 
@@ -176,7 +177,7 @@
             // 
             this.uiSymbolButton3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiSymbolButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiSymbolButton3.Location = new System.Drawing.Point(245, 501);
+            this.uiSymbolButton3.Location = new System.Drawing.Point(245, 513);
             this.uiSymbolButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton3.Name = "uiSymbolButton3";
             this.uiSymbolButton3.Radius = 10;

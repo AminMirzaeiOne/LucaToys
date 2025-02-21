@@ -17,6 +17,8 @@ namespace Accounting.Ui.Controls
             this.timerShow.Interval = 30;
             this.timerClose.Tick += new EventHandler(this.TimerClose_Tick);
             this.timerClose.Interval = 30;
+            this.timerHide.Tick += new EventHandler(this.TimerHide_Tick);
+            this.timerHide.Interval = 30;
         }
 
         public enum StartupSounds { None, SplashSound, LoginSound }
@@ -25,6 +27,7 @@ namespace Accounting.Ui.Controls
         private SoundPlayer player = new SoundPlayer();
         private System.Windows.Forms.Timer timerShow = new System.Windows.Forms.Timer();
         private System.Windows.Forms.Timer timerClose = new System.Windows.Forms.Timer();
+        private System.Windows.Forms.Timer timerHide = new System.Windows.Forms.Timer();
         private bool closeCancel = true;
         public System.Boolean Animation { get; set; } = true;
         public System.Boolean EnableMessageBox { get; set; } = true;
@@ -80,6 +83,14 @@ namespace Accounting.Ui.Controls
             
         }
 
+        public void Hide(bool animation = true)
+        {
+            if (animation)
+            {
+                this.timerHide.Start();
+            }
+        }
+
         private void TimerShow_Tick(object sender, EventArgs e)
         {
             if (this.Opacity < 1)
@@ -104,6 +115,19 @@ namespace Accounting.Ui.Controls
                 this.timerClose.Stop();
                 this.closeCancel = false;
                 this.Close();
+            }
+        }
+
+        private void TimerHide_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity > 0)
+            {
+                this.Opacity -= 0.10;
+            }
+            else
+            {
+                this.timerHide.Stop();
+                this.Hide();
             }
         }
 
