@@ -78,6 +78,9 @@
     <Compile Include="Ui\Controls\RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Ui\Controls\SunnyButtonPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ui\Controls\SunnyFormPlus.cs">
       <SubType>Form</SubType>
     </Compile>
