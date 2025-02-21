@@ -8,6 +8,6 @@ namespace Accounting.Ui.Controls
 {
     public class SunnyButtonPlus : Sunny.UI.UISymbolButton
     {
-
+        public bool Sound { get; set; } = true;
     }
 }
