@@ -16,7 +16,7 @@ namespace Accounting.Ui.Forms
         public Login()
         {
             InitializeComponent();
-            this.uiStyleManager1.Style = Sunny.UI.UIStyle.Red;
+            this.uiStyleManager1.Style = Sunny.UI.UIStyle.Black;
             this.uiComboBox1.BackColor = Color.FromArgb(20, 20, 20);
         }
 

@@ -267,7 +267,7 @@ namespace Accounting.Ui.Controls
         private Types types = Types.Error;
         private MessageButtons buttons = MessageButtons.Ok;
         private Results result = Results.None;
-        private SoundPlayer player = new SoundPlayer();
+        private SoundPlayer player = new SoundPlayer(Properties.Resources.MessageSound);
 
         public Results Result
         {
@@ -512,6 +512,12 @@ namespace Accounting.Ui.Controls
         private void SunnyMessagePlus_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
         {
             this.sendResult = this.Result;
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            player.Play();
         }
     }
 }

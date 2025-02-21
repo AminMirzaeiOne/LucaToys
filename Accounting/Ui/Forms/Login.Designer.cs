@@ -37,12 +37,12 @@ namespace Accounting.Ui.Forms
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiTextBox2 = new Sunny.UI.UITextBox();
             this.uiComboBox1 = new Sunny.UI.UIComboBox();
-            this.uiSymbolButton1 = new SunnyButtonPlus();
-            this.uiSymbolButton2 = new SunnyButtonPlus();
+            this.uiSymbolButton1 = new Accounting.Ui.Controls.SunnyButtonPlus();
+            this.uiSymbolButton2 = new Accounting.Ui.Controls.SunnyButtonPlus();
             this.uiLine1 = new Sunny.UI.UILine();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.uiSymbolButton3 = new SunnyButtonPlus();
+            this.uiSymbolButton3 = new Accounting.Ui.Controls.SunnyButtonPlus();
             this.SuspendLayout();
             // 
             // uiAvatar1
@@ -124,6 +124,7 @@ namespace Accounting.Ui.Forms
             this.uiSymbolButton1.Name = "uiSymbolButton1";
             this.uiSymbolButton1.Radius = 10;
             this.uiSymbolButton1.Size = new System.Drawing.Size(209, 67);
+            this.uiSymbolButton1.Sound = false;
             this.uiSymbolButton1.TabIndex = 3;
             this.uiSymbolButton1.Text = "ورود";
             this.uiSymbolButton1.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -138,6 +139,7 @@ namespace Accounting.Ui.Forms
             this.uiSymbolButton2.Name = "uiSymbolButton2";
             this.uiSymbolButton2.Radius = 10;
             this.uiSymbolButton2.Size = new System.Drawing.Size(209, 67);
+            this.uiSymbolButton2.Sound = true;
             this.uiSymbolButton2.Symbol = 61534;
             this.uiSymbolButton2.TabIndex = 3;
             this.uiSymbolButton2.Text = "انصراف";
@@ -184,6 +186,7 @@ namespace Accounting.Ui.Forms
             this.uiSymbolButton3.Name = "uiSymbolButton3";
             this.uiSymbolButton3.Radius = 10;
             this.uiSymbolButton3.Size = new System.Drawing.Size(209, 67);
+            this.uiSymbolButton3.Sound = true;
             this.uiSymbolButton3.Symbol = 61546;
             this.uiSymbolButton3.TabIndex = 3;
             this.uiSymbolButton3.Text = "مشکل";
@@ -209,8 +212,6 @@ namespace Accounting.Ui.Forms
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Padding = new System.Windows.Forms.Padding(2, 40, 2, 2);
-            this.Resizable = true;
-            this.ShowDragStretch = true;
             this.StartupSound = Accounting.Ui.Controls.SunnyFormPlus.StartupSounds.LoginSound;
             this.Text = "ورود";
             this.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);

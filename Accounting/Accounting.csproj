@@ -58,6 +58,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\Lenovo\Desktop\WFAlert_CS-SoundsVersion\WFAlert\bin\Debug\WFAlert.dll</HintPath>
     </Reference>
+    <Reference Include="WFAnimations">
+      <HintPath>C:\Users\Lenovo\Downloads\WFAnimations.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstractions\IPerson.cs" />
