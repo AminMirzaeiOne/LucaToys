@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -261,9 +262,12 @@ namespace Accounting.Ui.Controls
         public enum MessageButtons { YesNo, Ok, YesNoCancel }
         public enum Results { None, Ok, Yes, No, Cancel }
 
+        
+
         private Types types = Types.Error;
         private MessageButtons buttons = MessageButtons.Ok;
         private Results result = Results.None;
+        private SoundPlayer player = new SoundPlayer();
 
         public Results Result
         {

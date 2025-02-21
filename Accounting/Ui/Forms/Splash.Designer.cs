@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -53,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(711, 264);
+            this.label1.Location = new System.Drawing.Point(711, 261);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 32);
             this.label1.TabIndex = 1;
@@ -65,7 +66,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label2.Location = new System.Drawing.Point(758, 320);
+            this.label2.Location = new System.Drawing.Point(758, 317);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(207, 32);
@@ -147,7 +148,7 @@
             this.roundPictureBox1.BackgroundImage = global::Accounting.Properties.Resources.LucaLogoMain2;
             this.roundPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundPictureBox1.BorderRadius = ((byte)(210));
-            this.roundPictureBox1.Location = new System.Drawing.Point(758, 33);
+            this.roundPictureBox1.Location = new System.Drawing.Point(758, 31);
             this.roundPictureBox1.Name = "roundPictureBox1";
             this.roundPictureBox1.Size = new System.Drawing.Size(210, 210);
             this.roundPictureBox1.TabIndex = 3;
@@ -284,11 +285,13 @@
             // 
             // Splash
             // 
+            this.AllowShowTitle = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = global::Accounting.Properties.Resources.SplashImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1050, 620);
             this.ContextMenuStrip = this.uiContextMenuStrip1;
+            this.ControlBox = false;
             this.Controls.Add(this.uiSymbolButton4);
             this.Controls.Add(this.uiSymbolButton1);
             this.Controls.Add(this.uiSymbolButton3);
@@ -298,10 +301,17 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Splash";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Splash";
+            this.Padding = new System.Windows.Forms.Padding(0);
+            this.ShowIcon = false;
+            this.ShowTitle = false;
+            this.StartupSound = Accounting.Ui.Controls.SunnyFormPlus.StartupSounds.SplashSound;
+            this.Text = "";
+            this.TitleHeight = 29;
+            this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 1050, 620);
             this.Load += new System.EventHandler(this.Splash_Load);
             this.uiContextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).EndInit();

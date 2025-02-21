@@ -17,7 +17,7 @@ namespace Accounting
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Accounting.Ui.Forms.Splash());
+            Application.Run(new Accounting.Ui.Forms.Login());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

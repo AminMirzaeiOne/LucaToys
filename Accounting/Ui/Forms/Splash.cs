@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Accounting.Ui.Controls;
 
 namespace Accounting.Ui.Forms
 {
-    public partial class Splash : Form
+    public partial class Splash : SunnyFormPlus
     {
         public Splash()
         {
@@ -29,7 +30,7 @@ namespace Accounting.Ui.Forms
                 this.timer1.Stop();
                 this.Cursor = Cursors.Arrow;
                 System.Threading.Thread.Sleep(200);
-                this.Hide();
+                this.Hide(true);
                 System.Threading.Thread.Sleep(200);
                 Accounting.Ui.Forms.Login login = new Login();
                 login.Show();
