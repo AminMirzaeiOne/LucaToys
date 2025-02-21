@@ -133,7 +133,7 @@
     <Folder Include="Ui\Components\" />
     <Folder Include="Ui\Dialogs\" />
     <Folder Include="Ui\Messages\" />
-    <Folder Include="Ui\Pages\" />
+    <Folder Include="Ui\Pages\Login\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SplashImage.jpg" />
