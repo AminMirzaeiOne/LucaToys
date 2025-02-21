@@ -199,4 +199,7 @@
   <data name="LucaToysLite_Resources_ASound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LucaToysLite_Resources_ASound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MessageSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

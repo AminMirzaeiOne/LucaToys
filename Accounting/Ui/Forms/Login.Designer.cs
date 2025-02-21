@@ -1,4 +1,6 @@
-﻿namespace Accounting.Ui.Forms
+﻿using Accounting.Ui.Controls;
+
+namespace Accounting.Ui.Forms
 {
     partial class Login
     {
@@ -35,12 +37,12 @@
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiTextBox2 = new Sunny.UI.UITextBox();
             this.uiComboBox1 = new Sunny.UI.UIComboBox();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
+            this.uiSymbolButton1 = new SunnyButtonPlus();
+            this.uiSymbolButton2 = new SunnyButtonPlus();
             this.uiLine1 = new Sunny.UI.UILine();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.uiSymbolButton3 = new Sunny.UI.UISymbolButton();
+            this.uiSymbolButton3 = new SunnyButtonPlus();
             this.SuspendLayout();
             // 
             // uiAvatar1
@@ -225,11 +227,11 @@
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UIComboBox uiComboBox1;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
-        private Sunny.UI.UISymbolButton uiSymbolButton2;
+        private SunnyButtonPlus uiSymbolButton1;
+        private SunnyButtonPlus uiSymbolButton2;
         private Sunny.UI.UILine uiLine1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Sunny.UI.UISymbolButton uiSymbolButton3;
+        private SunnyButtonPlus uiSymbolButton3;
     }
 }
