@@ -155,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\LucaToysLite_Resources_ASound.wav" />
     <None Include="Resources\icons8-google-40.png" />
     <None Include="Resources\icons8-copy-40.png" />
     <None Include="Resources\icons8-unavailable-40.png" />
